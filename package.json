@@ -1,0 +1,11 @@
+{
+  "name": "coordinate-shenanigans",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Digitalents Helsinki",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "proj4": "^2.5.0"
+  }
+}
