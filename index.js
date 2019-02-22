@@ -36,7 +36,8 @@ const convertJSON = async () => {
                     multicoords.push(multitemp)
                 })
                 goddata.push({
-                    "props": properties,
+                    "type": value[1].type,
+                    "properties": properties,
                     "geometry": {
                         "type": value[1].geometry.type,
                         "coordinates": multicoords
@@ -53,7 +54,8 @@ const convertJSON = async () => {
                     convertedcoords.push(fincoord)
                 })
                 goddata.push({
-                    "props": properties,
+                    "type": value[1].type,
+                    "properties": properties,
                     "geometry": {
                         "type": value[1].geometry.type,
                         "coordinates": convertedcoords
