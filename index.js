@@ -16,6 +16,8 @@ const convertJSON = async () => {
         const responsible = value[1].properties["hel:vastuu_org"]
         if (responsible == "Kulttuurin ja vapaa-ajan toimiala") {
             const properties = value[1].properties
+            properties['dt:lastcleaned'] = 0
+            properties['dt:credits'] = []
             if (value[1].geometry.type == 'MultiLineString') {
                 const multicoords = []
 
